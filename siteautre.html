@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sitedeux.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+        <title>Human Design</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <section class="entete">
+            <nav> 
+                <a href="siteautre.html"><img src="humandesign.png" class="logo"></a>
+                <div class="nav-links" id="navlinks">  
+                    <i class="fa fa-times" onclick="hidemenu()"></i>             
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=ADlGkXAz1D0">HOME</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=uB08voBT2t8">CONTACT</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6TpyRE_juyA&list=LL&index=1">CUSTOMIZE</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rMltoD1jCGI">CART</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Just To Surprise Yourself</h1>
+                <p>Discover people, Discover prices, Discover yourself</p>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="titlebtn">Browse Products</a>
+            </div>
+        </section>
+
+
+        <!-- DESCRIPTION EN DESSOUS DE L'ENTETE -->
+        <section class="description">
+
+            <h1>Nos Produits</h1>
+            <div class="categoriemenu">
+                <div class="naturel">
+                    <h3>Des Produits Naturels</h3>
+                    <p>Nos marchandises sont issues de l'agriculture biologique, et sont 100% naturelles</p>
+                </div>
+                <div class="naturel">
+                    <h3>Une Plateforme Pratique</h3>
+                    <p>Avec Human Design acheter de la main d'oeuvre n'a jamais été aussi simple.</p>
+                </div>
+                <div class="naturel">
+                    <h3>Une Large Gamme</h3>
+                    <p>Nous souhaitons rester une plateforme multiculturelle, nos produits viennent de divers horizons.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUTRE DESCRIIPTION (C'EST PLUS JOLI) -->
+        <section class="services">
+            <h1>Nos Services</h1>
+            <p>Human Design vous propose trois services</p>
+
+            <div class="categoriemenu">
+                <div class="acheter">
+                    <img src="buy.jpg">
+                    <div class="layer">
+                        <h3>ACHETER</h3>
+                    </div>
+                </div>
+                <div class="acheter">
+                    <img src="cash.jpg">
+                    <div class="layer">
+                        <h3>VENDRE</h3>
+                    </div>
+                </div>
+                <div class="acheter">
+                    <img src="gift1.jpg">
+                    <div class="layer">
+                        <h3>DONNER</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PIED DE PAGE -->
+        <section class="enpied">
+            <h4>EN SAVOIR PLUS</h4>
+            <p>Nous sommes deux étudiants très prometteurs qui souhaitent avoir une bonne note</p>
+            <div class="icones">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+        <!-- CECI EST LE JAVASCRIPT POUR LE MENU DE LA PAGE REDUITE -->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+
+            function showmenu(){
+                navlinks.style.right = "0";
+            }
+
+            function hidemenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
