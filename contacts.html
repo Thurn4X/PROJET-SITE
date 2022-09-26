@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="accueil.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+        <title>Human Design</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <section class="entete">
+            <nav> 
+                <a href="siteautre.html"><img src="humandesign.png" class="logo"></a>
+                <div class="nav-links" id="navlinks">              
+                    <ul>
+                        <li><a href="siteautre.html">HOME</a></li>
+                        <li><a href="accueuil.html">CONTACT</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6TpyRE_juyA&list=LL&index=1">CUSTOMIZE</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rMltoD1jCGI">CART</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="infos">               
+                <form>
+                    <label>Nom:</label><input name=name type="text" autocomplete=off><br><br><br>
+                    <label>Date de Naissance:</label><input size=2 name=dd type="number" min="1" max="31" placeholder=dd> / <input size=2 name=mm type="number" min="1" max="12"placeholder=mm> / <input size=6 name=yyyy type="number" min="1950" max="2022" placeholder=yyyy><br><br><br>
+                    <label>Pays:</label><input name=pays type="text"><br><br>
+                    <label>Ville:</label><input name=ville type="text"><br><br>
+                    <label>Email:</label><input name=email type="text"><br><br>
+                    <label>Telephone:</label><input name=tel type="text" pattern="[0-9]{10}"><br><br>
+
+                </form>
+            </div>
+        </section>
