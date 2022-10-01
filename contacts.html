@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sitedeux.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+        <title>Human Design</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <section class="subheader">
+            <nav> 
+                <a href="siteautre.html"><img src="humandesign.png" class="logo"></a>
+                <div class="nav-links" id="navlinks"> 
+                    <i class="fa fa-times" onclick="hidemenu()"></i>             
+                    <ul>
+                        <li><a href="siteautre.html">HOME</a></li>
+                        <li><a href="accueuil.html">CONTACT</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6TpyRE_juyA&list=LL&index=1">CUSTOMIZE</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rMltoD1jCGI">CART</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Contactez-nous</h1>
+            <div class="col">
+                <form method="">
+                    <input name=name type="text" placeholder="Entrez votre nom..." required=>
+                    <input name=email type="email" placeholder="Entrez votre email..." required>
+                    <input name=tel type="text" placeholder="Entrez votre numero de telephone..." required>
+                    <input name=pays type="text" placeholder="Entrez votre pays..." required>
+                    <input name=ville type="text" placeholder="Entrez votre ville..."required>
+                    <textarea name="message" cols="30" placeholder="Entrez votre message..." required></textarea><br>
+                    <button type="submit" class="titlebtn">Envoyer message</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="infocontact">
+            <div class="ligne">
+                <div class="col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5> Campus Lyontech, 3 Rue Victor Grignard</h5>
+                            <p>69100 Villeurbanne, Lyon, France</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <a href="tel:0472431700">
+                                <h5>
+                                    33 (0)4 72 43 17 00
+                                </h5>
+                            </a>
+                            <p>Tous les jours de la semaine</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="adresse">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.74793972662!2d4.86731522079054!3d45.7841730399545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea977b847259%3A0x9efbb71d73134a76!2sCPE%20Lyon!5e0!3m2!1sfr!2sfr!4v1664618675496!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        
+
+
+
+
+
+        <section class="enpied">
+            <h4>EN SAVOIR PLUS</h4>
+            <p>Nous sommes deux étudiants très prometteurs qui souhaitent avoir une bonne note</p>
+            <div class="icones">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+        <script>
+            var navlinks = document.getElementById("navlinks");
+
+            function showmenu(){
+                navlinks.style.right = "0";
+            }
+
+            function hidemenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
