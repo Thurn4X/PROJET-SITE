@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sitedeux.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+        <title>Human Design</title>
+        <script defer src="javascripthehe.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <section class="subheader">
+            <nav> 
+                <a href="siteautre.html"><img src="humandesign.png" class="logo"></a>
+                <div class="nav-links" id="navlinks"> 
+                    <i class="fa fa-times" onclick="hidemenu()"></i>             
+                    <ul>
+                        <li><a href="siteautre.html">ACCUEIL</a></li>                        
+                        <li><a href="https://www.youtube.com/watch?v=6TpyRE_juyA&list=LL&index=1">PRODUITS</a></li>
+                        <li><a href="contacts.html">CONTACT</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rMltoD1jCGI">PANIER</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+
+            <div class="grid">
+                <div class="colon f1">
+                    <a href="contacts.html">
+                        <!-- <img src="gants.jpeg"> -->
+                    </a>
+                    <div class="layergrid">
+                        <h3>ACHETER</h3>
+                    </div>
+                </div>
+                <div class="colon f2">
+                    <a href="contacts.html">
+                        <!-- <img src="punchingball.jpg"> -->
+                    </a>
+                </div>
+                <div class="colon f3">
+                    <a href="contacts.html">
+                        <!-- <img src="sacdefrappe.jpg"> -->
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section class="enpied">
+            <h4>EN SAVOIR PLUS</h4>
+            <p>Nous sommes deux étudiants très prometteurs qui souhaitent avoir une bonne note</p>
+            <div class="icones">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+    
+        <script>
+            var navlinks = document.getElementById("navlinks");
+    
+            function showmenu(){
+                navlinks.style.right = "0";
+            }
+    
+            function hidemenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
+    
