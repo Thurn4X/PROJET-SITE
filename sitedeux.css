@@ -265,6 +265,24 @@ p{
     opacity: 1;
 }
 
+
+.layer p{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p {
+    bottom: 30%;
+    opacity: 1;
+}
 /* PIED DE PAGE */
 
 .enpied{
@@ -399,16 +417,24 @@ p{
     margin-top: 100px;
     display: block;
     padding: 20px;
-    width: 25%;
+    width: 15%;
     padding-left: 25%;
     
 }
 .grid .colon{
     height: 200px;
     max-height: 200px;
-    background-color: pink;
+    background-color: white;
     margin-bottom: 100px;
-    padding: 20px;
+   
+
+}
+
+.grid .colon img
+{
+    height : 100%;
+    width: 70%;
+
 }
 
 .layergrid{
@@ -450,12 +476,27 @@ p{
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
-    background-image: url("gants.jpeg");
-    background-size: cover;
-    background-position: center;
+   
     
 }
-
+.f2{
+    flex-basis: 32%;
+    border-radius: 8%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+   
+    
+}
+.f3{
+    flex-basis: 32%;
+    border-radius: 8%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+   
+    
+}
 
 
 
