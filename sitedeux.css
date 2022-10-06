@@ -2,15 +2,28 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+
+    
+    
+}
+.background{
+    background-image: radial-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://raw.githubusercontent.com/Thurn4X/PROJET-SITE/main/wp6899569-dark-mountain-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 .entete{
     min-height: 100vh;
     width: 100%;
-    background-image: radial-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://raw.githubusercontent.com/Thurn4X/PROJET-SITE/main/wp6899569-dark-mountain-wallpapers.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+
 }
 
 nav{
@@ -148,10 +161,11 @@ nav .fa{
 
 /* DESCRIPTION */
 .description{
-    width: 80%;
+    width: 100vw;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 h1{
@@ -206,7 +220,6 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 50px;
-    background-color: #030615;
 
 }
 
@@ -289,6 +302,7 @@ p{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    color: white;
     
 }
 
@@ -298,12 +312,16 @@ p{
     font-weight: 600;
 
 }
+.enpied p{
+    color: white;
+}
 
 .icones .fa{
     color: #030615;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+    color: white;
 }
 
 /* Contact */
@@ -336,7 +354,6 @@ p{
     width: 100%;
     margin: auto;
     padding: 80px 0;
-    background-color: #030615;
     
 }
 
@@ -497,6 +514,70 @@ p{
    
     
 }
+
+
+
+/* customisation */
+
+.entete1{
+    width: 100%;
+
+}
+
+.vitrine{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    
+}
+.box1{
+    flex-basis: 70%;
+    border-radius: 10%;
+    margin-bottom: 30px;
+    margin-right: 10%;
+    padding: 0px 40px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.box1 img{
+    width: 100%;
+    display: block;
+}
+
+.vitrine h1{
+    color: white;
+}
+
+.vitrine p{
+    color: white;
+}
+
+.vitrine li{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

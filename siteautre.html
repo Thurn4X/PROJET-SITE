@@ -9,6 +9,7 @@
         <link rel="icon" type="image/x-icon" href="favicon.png">
     </head>
     <body>
+        <div class="background"></div>
         <section class="entete">
             <nav> 
                 <a href="siteautre.html"><img src="humandesign.png" class="logo"></a>
@@ -26,7 +27,7 @@
             <div class="text-box">
                 <h1>Enflammez vos entrainement</h1>
                 <p>Cherchez ce que vous souhaitez, Frappez ce que vous souhaitez</p>
-                <a href="https://tinyurl.com/3wcyvb7x" class="titlebtn">Decouvrez nos produits</a>
+                <a class="titlebtn" onClick="document.getElementById('produits').scrollIntoView();"">Decouvrez nos produits</a>
             </div>
         </section>
 
@@ -42,7 +43,7 @@
                 </div>
                 <div class="naturel">
                     <h3>Une Plateforme Pratique</h3>
-                    <p>Avec Human Design acheter de la main d'oeuvre n'a jamais été aussi simple.</p>
+                    <p>Avec Human Design acheter du matérieln'a jamais été aussi simple.</p>
                 </div>
                 <div class="naturel">
                     <h3>Une Large Gamme</h3>
@@ -51,32 +52,42 @@
             </div>
         </section>
 
-        <!-- AUTRE DESCRIIPTION (C'EST PLUS JOLI) -->
-        <section class="services">
-            <h1>Nos Services</h1>
-            <p>Human Design vous propose trois services</p>
+        <!-- PRODUITS -->
+        <section class="services" id="produits">
+            <h1>Nos Produits</h1>
+            <p>Human Design vous propose trois catégories</p>
 
             <div class="categoriemenu">
                 <div class="acheter">
-                    <img src="buy.jpg">
-                    <div class="layer">
-                        <h3>ACHETER</h3>
-                    </div>
+                    <img src="gants.jpeg">
+                    <a href="personnalisation.html?id=1">
+                        <div class="layer">
+                            <h3>GANTS</h3>
+                            <p> Pour plus de force en toute circonstance</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="acheter">
-                    <img src="cash.jpg">
-                    <div class="layer">
-                        <h3>VENDRE</h3>
+                    <img src="suuuu.jpg">
+                    <a href="personnalisation.html?id=2">
+                        <div class="layer">
+                            <h3>SAC DE FRAPPE</h3>
+                            <p> Pour se défouler en toute mobilité</p>
                     </div>
+                    </a>
                 </div>
                 <div class="acheter">
-                    <img src="gift1.jpg">
-                    <div class="layer">
-                        <h3>DONNER</h3>
+                    <img src="pb.jpg">
+                    <a href="personnalisation.html?id=3">
+                        <div class="layer">
+                            <h3>Punching-ball</h3>
+                            <p>BOOM BOOM TAM TAM</p>
                     </div>
+                    </a>
                 </div>
 
             </div>
+    
 
         </section>
 
