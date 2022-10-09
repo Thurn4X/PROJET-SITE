@@ -531,11 +531,16 @@ p{
     transition: 0.5s;
     
 }
+.vitrine div{
+    flex: 1 1;
+    border: 1px red solid;
+    text-align: center;
+  
+    margin: 5px;  /* and that, will result in a 10px gap */
+}
 .box1{
-    flex-basis: 70%;
-    border-radius: 10%;
+    flex-basis: 40%;
     margin-bottom: 30px;
-    margin-right: 10%;
     padding: 0px 40px;
     position: relative;
     overflow: hidden;
@@ -555,11 +560,11 @@ p{
     color: white;
 }
 
-.vitrine li{
+
+
+.vitrine .texte{
     color: white;
 }
-
-
 
 
 
