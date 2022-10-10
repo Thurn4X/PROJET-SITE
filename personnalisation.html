@@ -27,22 +27,23 @@
         </section>
 
         <!-- PRODUITS -->
-        <div class="vitrine">
+        <div class="vitrine" onload="changesexe('rien');changeimage('rien')">
             <div class="box1">
                 <img src="gants.jpeg" id="image">
             </div>
             <div class="texte">
                 <h1>GANTS DE BOXE</h1>
                 <p>choisissez votre personnalisation</p><br><br>
-                <input type="radio" name="sexe" id="homme" value="1" onclick="changeimage('homme')" checked>Masculin
-                <input type="radio" name="sexe" id="homme" value="2" onclick="changeimage('femme')" checked>Feminin<br><br><br>
-                <input type="radio" name="ethnie" id="arabe" value="arabe" checked>arabe<br><br><br>
-                <input type="radio" name="ethnie" id="mexicain" value="mexicain" checked>mexicain<br><br><br>
-                <input type="radio" name="ethnie" id="russe" value="russe" checked>russe<br><br><br>
-                <input type="radio" name="ethnie" id="ptitarabe" value="ptitarabe" checked>petit arabe<br><br><br>
-                <input type="radio" name="ethnie" id="pakistanais" value="pakistanais" checked>pakistanais<br><br><br>
-                <input type="radio" name="ethnie" id="libanais" value="libanais" checked>libanais<br><br><br>
-                <input type="radio" name="ethnie" id="singe" value="singe" checked>singe
+                <input type="radio" name="sexe" id="homme" value="1" onclick="changesexe('rien')" checked>Aucun motif
+                <input type="radio" name="sexe" id="homme" value="1" onclick="changesexe('homme')" checked>Masculin
+                <input type="radio" name="sexe" id="homme" value="2" onclick="changesexe('femme')" checked>Feminin<br><br><br>
+                <input type="radio" name="ethnie" id="arabe" value="arabe" onclick="changeimage('arabe')" checked>arabe<br><br><br>
+                <input type="radio" name="ethnie" id="mexicain" value="mexicain" onclick="changeimage('mexicain')" checked>mexicain<br><br><br>
+                <input type="radio" name="ethnie" id="russe" value="russe" onclick="changeimage('russe')" checked>russe<br><br><br>
+                <input type="radio" name="ethnie" id="ptitarabe" value="ptitarabe" onclick="changeimage('ptitarabe')" checked>petit arabe<br><br><br>
+                <input type="radio" name="ethnie" id="pakistanais" value="pakistanais" onclick="changeimage('pakistanais')" checked>pakistanais<br><br><br>
+                <input type="radio" name="ethnie" id="libanais" value="libanais" onclick="changeimage('libanais')" checked>libanais<br><br><br>
+                <input type="radio" name="ethnie" id="singe" value="singe" onclick="changeimage('singe')" checked>singe
             </div>
  
         </div>
