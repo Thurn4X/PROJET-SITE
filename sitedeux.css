@@ -405,6 +405,11 @@ p{
 .col div:hover::after{
     width: 100%;
 }
+
+.col input:invalid {
+    box-shadow: 0 0 20px 0 rgba(255,0,0,0.7);
+}
+
 .col input, .col textarea{
     width: 50%;
     padding: 15px;
@@ -518,10 +523,6 @@ p{
 
 /* customisation */
 
-.entete1{
-    width: 100%;
-
-}
 
 .vitrine{
     margin-top: 5%;
@@ -532,10 +533,9 @@ p{
 }
 .vitrine div{
     flex: 1 1;
-    border: 1px red solid;
     text-align: center;
   
-    margin: 5px;  /* and that, will result in a 10px gap */
+    margin: 5px;
 }
 .box1{
     flex-basis: 40%;

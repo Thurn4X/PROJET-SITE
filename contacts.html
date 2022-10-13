@@ -10,32 +10,19 @@
     </head>
     <body>
         <div class="background"></div>
-        <section class="entete">
-            <nav> 
-                <a href="siteautre.html"><img src="humandesign.png" class="logo"></a>
-                <div class="nav-links" id="navlinks"> 
-                    <i class="fa fa-times" onclick="hidemenu()"></i>             
-                    <ul>
-                        <li><a href="siteautre.html">ACCUEIL</a></li>                        
-                        <li><a href="https://www.youtube.com/watch?v=6TpyRE_juyA&list=LL&index=1">PRODUITS</a></li>
-                        <li><a href="contacts.html">CONTACT</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=rMltoD1jCGI">PANIER</a></li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showmenu()"></i>
-            </nav>
-        </section>
+        <header id="header"></header>
+
         <section class="subheader">
             <h1>Contactez-nous</h1>
             <div class="col">
                 <form method="">
                     <input name=name type="text" placeholder="Entrez votre nom..." required=>
                     <input name=email type="email" placeholder="Entrez votre email..." required>
-                    <input name=tel type="text" placeholder="Entrez votre numero de telephone..." required>
+                    <input name=tel id="tel" type="text" placeholder="Entrez votre numero de telephone..." pattern="[0-9]{10}" required>
                     <input name=pays type="text" placeholder="Entrez votre pays..." required>
                     <input name=ville type="text" placeholder="Entrez votre ville..."required>
                     <textarea name="message" cols="30" placeholder="Entrez votre message..." required></textarea><br>
-                    <button type="submit" class="titlebtn">Envoyer message</button>
+                    <button type="submit" id="submit" class="titlebtn">Envoyer message</button>
                 </form>
             </div>
         </section>
@@ -77,16 +64,7 @@
 
 
 
-        <section class="enpied">
-            <h4>EN SAVOIR PLUS</h4>
-            <p>Nous sommes deux étudiants très prometteurs qui souhaitent avoir une bonne note</p>
-            <div class="icones">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-linkedin"></i>
-            </div>
-        </section>
+        <footer id="footer"></footer>
 
         <script>
             var navlinks = document.getElementById("navlinks");
