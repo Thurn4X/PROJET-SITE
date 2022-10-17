@@ -546,7 +546,7 @@ p{
     
 }
 
-.box1 img{
+.box1 canvas{
     width: 100%;
     display: block;
 }

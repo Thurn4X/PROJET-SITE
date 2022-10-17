@@ -1,3 +1,18 @@
+class Produits{
+    constructor(type, taille, couleur, prixtxt, prix, img) {
+    this._typeproduit = type
+    this._taille = taille
+    this._couleur = couleur
+    this._prix = prix
+    this._img= img
+    this._prixtxt= prixtxt
+    }
+
+    }
+var gantes= new Produits("gant", "petit", "marron", "30 €",30, "gants.jpeg");
+var sacfrappe= new Produits("sac", "petit" ,"marron", "50 €",50, "suuuu.jpg");
+var punching= new Produits("ball", "petit", "rouge", "40 €",40, "pb.jpg");
+products = [ gantes, sacfrappe, punching]
 var sexe, ethnie;
 
 
@@ -32,16 +47,20 @@ fetch("footer.html")
 
 let produit_id = new URLSearchParams(window.location.search).get("id")
 if (produit_id == 1){
-    document.getElementById("image").src = "gants.jpeg";
-        document.getElementById("nomarticle").innerHTML = 'GANTS DE BOXE';
+    document.getElementById("image").src = gantes._img;
+    document.getElementById("nomarticle").innerHTML = gantes._typeproduit;
+    document.getElementById("prixarticle").innerHTML= gantes._prixtxt;
+
 }else if (produit_id == 2){
-    document.getElementById("image").src = "suuuu.jpg";
-    document.getElementById("nomarticle").innerHTML = 'SAC DE FRAPPE';
+    document.getElementById("image").src = sacfrappe._img;
+    document.getElementById("nomarticle").innerHTML = sacfrappe._typeproduit;
+    document.getElementById("prixarticle").innerHTML = sacfrappe._prixtxt;
 
 
 }else if (produit_id == 3){
-    document.getElementById("image").src = "pb.jpg";
-    document.getElementById("nomarticle").innerHTML = 'PUNCHING BALL';
+    document.getElementById("image").src = punching._img;
+    document.getElementById("nomarticle").innerHTML = punching._typeproduit;
+    document.getElementById("prixarticle").innerHTML = punching._prixtxt;
 
 
 }
@@ -55,15 +74,10 @@ if (produit_id == 1){
 
 
 
-class Produits{
-    constructor(type, taille, couleur) {
-    this._typeproduit = type
-    this._taille = taille
-    this._couleur = couleur
-    
-    }
 
-    }
+
+
+
 
 function changesexe(jojo){
     sexe = jojo
