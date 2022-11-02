@@ -15,21 +15,15 @@
         <!-- PRODUITS -->
         <div class="vitrine" onload="changesexe('rien');changeimage('rien')">
             <div class="box1">
-                <img src="gants.jpeg" id="image">
+                <canvas id=c></canvas>
             </div>
             <div class="texte">
                 <h1 id="nomarticle"></h1>
+                <h1 id="prixarticle"></h1>
                 <p>choisissez votre personnalisation</p><br><br>
-                <input type="radio" name="sexe" id="homme" value="1" onclick="changesexe('rien')" checked>Aucun motif
-                <input type="radio" name="sexe" id="homme" value="1" onclick="changesexe('homme')" checked>Masculin
-                <input type="radio" name="sexe" id="homme" value="2" onclick="changesexe('femme')" checked>Feminin<br><br><br>
-                <input type="radio" name="ethnie" id="arabe" value="arabe" onclick="changeimage('arabe')" checked>arabe<br><br><br>
-                <input type="radio" name="ethnie" id="mexicain" value="mexicain" onclick="changeimage('mexicain')" checked>mexicain<br><br><br>
-                <input type="radio" name="ethnie" id="russe" value="russe" onclick="changeimage('russe')" checked>russe<br><br><br>
-                <input type="radio" name="ethnie" id="ptitarabe" value="ptitarabe" onclick="changeimage('ptitarabe')" checked>petit arabe<br><br><br>
-                <input type="radio" name="ethnie" id="pakistanais" value="pakistanais" onclick="changeimage('pakistanais')" checked>pakistanais<br><br><br>
-                <input type="radio" name="ethnie" id="libanais" value="libanais" onclick="changeimage('libanais')" checked>libanais<br><br><br>
-                <input type="radio" name="ethnie" id="singe" value="singe" onclick="changeimage('singe')" checked>singe<br><br><br>
+                <label>Couleur : <input type=range id=rHue max=359 value=0></label><br><br>
+                <label for="myfile">Choisisez une image:</label>
+                <input type="file" id="uploader"><br><br>
                 <a class="titlebtn" href="panier.html" id="panier">Ajouter au panier</a>
 
             </div>

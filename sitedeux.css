@@ -527,18 +527,20 @@ p{
 .vitrine{
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     transition: 0.5s;
     
 }
 .vitrine div{
     flex: 1 1;
     text-align: center;
-  
+    align-items: center;
     margin: 5px;
 }
 .box1{
-    flex-basis: 40%;
+    max-height: 100vh;
+    min-height: 100vh;
+    flex-basis: 30%;
     margin-bottom: 30px;
     padding: 0px 40px;
     position: relative;
@@ -546,9 +548,12 @@ p{
     
 }
 
+
 .box1 canvas{
     width: 100%;
-    display: block;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 .vitrine h1{
@@ -563,6 +568,10 @@ p{
 
 .vitrine .texte{
     color: white;
+}
+
+.vitrine .texte a{
+    margin-top: 10%;
 }
 
 
