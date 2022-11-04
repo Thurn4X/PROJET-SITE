@@ -1,0 +1,26 @@
+<div class="product-cart" style="display: flex; justify-content: space-between">
+    <div style="display: flex; gap: 20px">
+        <canvas slot="canvas-bg" class="product-viewer" width="300" height="300">
+        </canvas>
+        <div class="product-description" style="padding: 10px">
+            <h2>
+                <a slot="name"></a>
+            </h2>
+            <p slot="description"></p>
+            <p slot="price"></p>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px">
+        <span>
+        Quantité : <span slot="quantity"></span>
+        </span>
+        <span>
+            Prix total : <span slot="total-price"></span>
+        </span>
+        <div class="actions" style="margin-top: 10px">
+            <button slot="remove-quantity-cb"> <h3> - </h3> </button>
+            <button slot="add-quantity-cb"> <h3> + </h3> </button>
+            <button slot="delete-cb"><h3> Retirer du panier </h3></button>
+        </div>
+    </div>
+</div>

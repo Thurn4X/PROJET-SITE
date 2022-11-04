@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Gants",
+    "description": "Gants de boxe",
+    "price": 30
+  },
+  {
+    "id": 2,
+    "name": "Sac de frappe",
+    "description": "Sac de frappe de 100kg",
+    "price": 100
+  },
+  {
+    "id": 3,
+    "name": "Punching ball",
+    "description": "Punching ball de 10kg",
+    "price": 30
+  },
+  {
+    "id": 4,
+    "name": "Protège dents",
+    "description": "Protège dents de boxe en silicone",
+    "price": 10
+  }
+]

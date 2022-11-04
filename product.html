@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sport shop - Produits</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/product.css">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/product_loader.js" defer></script>
+
+    <script src="js/product.js" defer></script>
+    <script src="js/customisation_canvas.js" defer></script>
+</head>
+<body style="height: 100vh">
+<header></header>
+
+<div id="wrapper" style="height: 100%; padding: 40px">
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); justify-items: center; height: 100%">
+
+        <canvas slot="canvas-bg" class="product-viewer" width="300" height="300">
+        </canvas>
+
+        <div id="customisations"
+             style="width: 100%; display: flex; flex-direction: column; gap: 10px; align-items: center">
+            <h3> Personalisation </h3>
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 10px">
+                <input type="text" slot="text-customisation" placeholder="Text à insérer">
+                <input type="color" slot="text-color-customisation">
+                <button slot="add-text-customisation">Ajouter un text</button>
+
+                <!--        <label slot="add-picture-customisation" for="image-input">Ajouter une image</label> -->
+                <!--        <input id="image-input" slot="picture-customisation" type="file" accept="image/*" style="display: none"> -->
+            </div>
+        </div>
+
+        <div>
+            <h1 slot="name"></h1>
+            <p slot="description"></p>
+            <h3 slot="price"></h3>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px">
+            <label>
+                <span>
+                    Quantité :
+                </span>
+                <input type="number" name="quantity" min="1" value="1">
+            </label>
+            <button slot="add-to-cart-cb">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
